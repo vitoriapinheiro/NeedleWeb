@@ -1,4 +1,5 @@
 {
+  "homepage": "https://vitoriapinheiro.github.io/needleweb",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -24,6 +25,8 @@
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
+    "predeploy": "react-scripts --openssl-legacy-provider build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "react-scripts build && rm -rf ../server/public && mv ./build ../server/public"
